@@ -1,23 +1,20 @@
 package com.otrum.people;
 
 public class People {
-    
-    private final int id;
-    private final String name;
-    private final int age;
 
-    public Person(int id, String name, int age) {
-        this.id=id;
-        this.name=name;
-        this.age=age;
+    private final long id;
+    private final String content;
+
+    public People(long id, String content) {
+        this.id = id;
+        this.content = content;
     }
-    public long getId(){
+
+    public long getId() {
         return id;
     }
-    public String getName(){
-        return name;
-    }
-    public String getAge(){
-        return age;
+
+    public String getContent() {
+        return content;
     }
 }
